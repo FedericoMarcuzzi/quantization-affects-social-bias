@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2935"
+   width="458.28934"
+   height="151.776"
+   viewBox="0 0 458.28934 151.776"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2939" />
+  <g
+     id="g2943"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,151.776)">
+    <g
+       id="g2945"
+       transform="translate(0,55.05)">
+      <g
+         id="g2947"
+         transform="scale(0.83264)">
+        <g
+           id="g2949"
+           transform="translate(2.242,70.199)">
+          <path
+             d="M 0,0 H 408.32"
+             style="fill:none;stroke:#000000;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path2951" />
+        </g>
+        <g
+           id="g2953"
+           transform="translate(0,-55.05)">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,8.219,114.265)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2957"><tspan
+               x="0 5.9805889 9.9616709 14.44487 18.425953 22.909151 29.885012 33.866093 36.851906"
+               y="0"
+               id="tspan2955">Benchmark</tspan></text>
+          <g
+             id="g2959"
+             transform="translate(74.434,110.977)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2961" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,114.265)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2965"><tspan
+               x="0 6.4737406 8.9664001 15.942259 19.923342 24.40654 27.89447 30.387129 34.870331 81.890129 88.363869 91.851799 95.832886 102.55769 108.53827 112.51936 115.01202 118.8586 123.3418 127.825 130.81081 177.65128 182.41245 186.39352 189.88145 206.32584 214.29697 218.27805 220.77071 223.75652 226.24918 294.07999 299.06531 302.05112 306.5343 313.51016 317.99338 320.48602"
+               y="0"
+               id="tspan2963">DimensionUsedCategoryTaskMetricPrompts</tspan></text>
+          <g
+             id="g2967"
+             transform="translate(2.242,108.935)">
+            <path
+               d="M 0,0 H 408.32"
+               style="fill:none;stroke:#000000;stroke-width:0.498;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2969" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,8.219,98.101)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2973"><tspan
+               x="0 7.9711294 15.942259 21.420729"
+               y="0"
+               id="tspan2971">MMLU</tspan></text>
+          <g
+             id="g2975"
+             transform="translate(74.434,94.813)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2977" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,98.101)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2981"><tspan
+               x="0 5.9805889 9.9616709 14.44487 18.425953 22.909151 25.401812 27.89447 30.387129 32.879787 35.372448 39.353531 81.890129 179.78529 185.76587 206.32584 212.79958 216.78065 221.26385 225.24493 228.23074 232.21182 234.70448 238.68556 245.41037 247.90303 251.74962 256.23282 258.72546 261.71127 266.19449 270.17557 273.66348 277.64456 299.31638 303.79956 308.28278 310.52435 315.00757 319.49075"
+               y="0"
+               id="tspan2979">Capabilities-CGGeneratedtext-based14,042</tspan></text>
+          <g
+             id="g2983"
+             transform="translate(2.242,92.771)">
+            <path
+               d="M 0,0 H 408.32"
+               style="fill:none;stroke:#000000;stroke-width:0.498;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2985" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,8.219,81.936)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2989"><tspan
+               x="0 4.9853182 7.4779778 11.459059 14.44487 18.425953 22.909151 27.89447 31.875551"
+               y="0"
+               id="tspan2987">StereoSet</tspan></text>
+          <g
+             id="g2991"
+             transform="translate(74.434,78.649)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2993" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,70.977)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3001"><tspan
+               x="0 4.9853182 7.4779778 11.459059 14.44487 18.425953 22.909151 25.401812 29.885012 34.36821 38.349293"
+               y="0"
+               id="tspan2995">Stereotypes</tspan><tspan
+               x="81.891998 88.365738 92.346825 96.830025 101.31322 105.2943 107.92146 112.40466 118.38525 122.36633 126.34741 130.32849 134.81169 140.79228 144.77336 147.26602 149.75868 154.24188 156.73454 161.21774 181.02452 186.00984 206.3277 211.31302 214.29883 218.78203 223.26523 227.24631 231.72951 234.22217 236.71483 239.20749 241.70015 246.18335 249.16916 253.65236 257.63345 261.1124 265.09348 303.80142 308.28464 310.52625 315.00943 319.49265"
+               y="-10.959"
+               id="tspan2997">Gender,Race,ReligionSPProbability-based2,592</tspan><tspan
+               x="-72.391998 -66.411407 -62.430328 -57.947128 -53.463928 -50.971272 -48.478611 -42.498024 -40.005363 -36.024281"
+               y="0"
+               id="tspan2999">RedditBias</tspan></text>
+          <g
+             id="g3003"
+             transform="translate(74.434,67.69)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3005" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,162.503,70.977)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3011"><tspan
+               x="0 6.4737406 10.454823 14.938023 19.421223 23.402304 26.029459 30.512659 36.493248 40.474331 44.45541 48.436493 52.919693 58.90028 62.881363 65.374023 67.866684 72.349884 74.842545 79.325737 99.132515 104.11784 124.4357 129.42102 132.40683 136.89003 141.37323 145.35431 149.83751 152.33017 154.82283 157.31549 159.80815 164.29135 167.27716 171.76036 175.74144 179.2204 183.20149 221.90944 226.39264 228.63423 233.11743 237.60063"
+               y="0"
+               id="tspan3007">Gender,Race,ReligionSPProbability-based1,962</tspan><tspan
+               x="-154.284 -146.17838 -143.68571 -139.20251 -134.71931 -128.73872 -126.24607 -122.26498"
+               y="10.958"
+               id="tspan3009">WinoBias</tspan></text>
+          <g
+             id="g3013"
+             transform="translate(74.434,56.731)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3015" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,162.503,60.019)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3019"><tspan
+               x="0 6.4737406 10.454823 14.938023 19.421223 23.402304 97.895157 103.87575 124.4357 130.90944 134.89052 139.37372 143.3548 146.34062 150.3217 152.81436 156.79544 163.52023 166.01289 169.85948 174.34268 176.83534 179.82115 184.30435 188.27647 191.7644 195.74548 221.90944 226.39264 228.63423 233.11743 237.60063"
+               y="0"
+               id="tspan3017">GenderCGGeneratedtext-based1,584</tspan></text>
+          <g
+             id="g3021"
+             transform="translate(2.242,54.689)">
+            <path
+               d="M 0,0 H 408.32"
+               style="fill:none;stroke:#000000;stroke-width:0.498;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3023" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,8.219,43.854)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3027"><tspan
+               x="0 6.4737406 8.9664001 12.454329 16.435411 19.421223 21.913881 28.88974 34.36821 38.627251 42.608334"
+               y="0"
+               id="tspan3025">DiscrimEval</tspan></text>
+          <g
+             id="g3029"
+             transform="translate(74.434,40.567)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3031" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,32.895)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3039"><tspan
+               x="0 4.8508224 8.8319044 11.324563 14.310374 18.793575 22.774656 26.262585"
+               y="0"
+               id="tspan3033">Fairness</tspan><tspan
+               x="81.891998 88.365738 92.346825 96.830025 101.31322 105.2943 107.92146 112.40466 118.38525 122.36633 126.34741 180.78242 185.76775 206.3277 211.31302 214.29883 218.78203 223.26523 227.24631 231.72951 234.22217 236.71483 239.20749 241.70015 246.18335 249.16916 253.65236 257.63345 261.1124 265.09348 303.80142 308.28464 310.52625 315.00943 319.49265"
+               y="-10.959"
+               id="tspan3035">Gender,RaceFTProbability-based9,450</tspan><tspan
+               x="-72.391998 -65.918259 -63.425598 -59.937672 -55.956589 -52.970779 -50.478119 -43.502258 -38.023788 -33.764748 -29.783667 -27.291008 -20.817266 -16.836185"
+               y="0"
+               id="tspan3037">DiscrimEvalGen</tspan></text>
+          <g
+             id="g3041"
+             transform="translate(74.434,29.608)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3043" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,162.503,32.895)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3049"><tspan
+               x="0 6.4737406 10.454823 14.938023 19.421223 23.402304 26.029459 30.512659 36.493248 40.474331 44.45541 97.895157 103.87575 124.4357 130.90944 134.89052 139.37372 143.3548 146.34062 150.3217 152.81436 156.79544 163.52023 166.01289 169.85948 174.34268 176.83534 179.82115 184.30435 188.27647 191.7644 195.74548 228.63423 233.11743 237.60063"
+               y="0"
+               id="tspan3045">Gender,RaceCGGeneratedtext-based140</tspan><tspan
+               x="-154.284 -147.81026 -143.15669 -140.17088 -135.32007 -131.33899 -128.84633 -125.86051 -121.37731 -117.39623 -113.9083"
+               y="10.959"
+               id="tspan3047">DT-Fairness</tspan></text>
+          <g
+             id="g3051"
+             transform="translate(74.434,18.649)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3053" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,162.503,21.936)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3057"><tspan
+               x="0 6.4737406 10.454823 14.938023 19.421223 23.402304 97.895157 103.87575 124.4357 130.90944 134.89052 139.37372 143.3548 146.34062 150.3217 152.81436 156.79544 163.52023 166.01289 169.85948 174.34268 176.83534 179.82115 184.30435 188.27647 191.7644 195.74548 228.63423 233.11743 237.60063"
+               y="0"
+               id="tspan3055">GenderCGGeneratedtext-based200</tspan></text>
+          <g
+             id="g3059"
+             transform="translate(2.242,16.606)">
+            <path
+               d="M 0,0 H 408.32"
+               style="fill:none;stroke:#000000;stroke-width:0.498;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3061" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,8.219,5.772)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3065"><tspan
+               x="0 6.4737406 11.127302 14.113113 18.874271 23.357471 27.840672 30.333332 34.314411 36.807072 39.299732"
+               y="0"
+               id="tspan3063">DT-Toxicity</tspan></text>
+          <g
+             id="g3067"
+             transform="translate(74.434,2.484)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3069" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,5.772)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3075"><tspan
+               x="0 4.7611585 9.2443581 13.727558 16.220217 20.2013 22.693958 25.186617 81.890129 88.363869 92.344955 96.828156 101.31136 105.29243 107.91959 112.40279 118.38338 122.36446 126.34554 130.32663 134.80983 140.79041 144.7715 147.26416 149.75681 154.24001 156.73267 161.21587 180.5295 185.51482 206.32584 212.79958 216.78065 221.26385 225.24493 228.23074 232.21182 234.70448 238.68556 245.41037 247.90303 251.74962 256.23282 258.72546 261.71127 266.19449 270.17557 273.66348 277.64456 299.31638 303.79956 308.28278 310.52435 315.00757 319.49075"
+               y="0"
+               id="tspan3071">ToxicityGender,Race,ReligionSCGeneratedtext-based19,200</tspan><tspan
+               x="-72.391998 -66.411407 -59.937672 -54.459202"
+               y="10.959"
+               id="tspan3073">BOLD</tspan></text>
+          <g
+             id="g3077"
+             transform="translate(74.434,-8.475)">
+            <path
+               d="M 0,0 V 10.959"
+               style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3079" />
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.611,-5.187)"
+             style="font-variant:normal;font-size:8.9664px;font-family:'Nimbus Roman';-inkscape-font-specification:NimbusRomNo9L-Regu;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3083"><tspan
+               x="0 4.7611585 9.2443581 13.727558 16.220217 20.2013 22.693958 25.186617 29.087002 33.570202 38.555519 42.536602 47.019802 49.512463 52.005119 58.98098 62.962059 67.445259 81.890129 88.363869 92.344955 96.828156 101.31136 105.29243 107.91959 112.40279 118.38338 122.36446 126.34554 130.32663 134.80983 140.79041 144.7715 147.26416 149.75681 154.24001 156.73267 161.21587 180.5295 185.51482 206.32584 212.79958 216.78065 221.26385 225.24493 228.23074 232.21182 234.70448 238.68556 245.41037 247.90303 251.74962 256.23282 258.72546 261.71127 266.19449 270.17557 273.66348 277.64456 299.31638 303.79956 308.28278 310.52435 315.00757 319.49075"
+               y="0"
+               id="tspan3081">Toxicity,SentimentGender,Race,ReligionSCGeneratedtext-based12,792</tspan></text>
+          <g
+             id="g3085"
+             transform="translate(2.242,-10.666)">
+            <path
+               d="M 0,0 H 408.32"
+               style="fill:none;stroke:#000000;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3087" />
+          </g>
+          <g
+             id="g3089"
+             transform="translate(0,55.05)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

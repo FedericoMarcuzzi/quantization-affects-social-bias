@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>How Quantization Shapes Bias in Large Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero is-orange">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">How Quantization Shapes Bias in Large Language Models</h1>
+
+            <!-- Authors -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+              <a href="https://insait.ai/dr-federico-marcuzzi/" target="_blank">Federico Marcuzzi</a><sup>1</sup><sup>*</sup>,</span>
+              <span class="author-block">
+              <a href="https://schwartz-lab-huji.github.io/" target="_blank">Xuefei Ning</a><sup>2</sup>,</span>
+              <span class="author-block">
+              <a href="https://nics-effalg.com/ningxuefei/" target="_blank">Roy Schwartz</a><sup>3</sup>,</span>
+              <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank"> Iryna Gurevych</a><sup>1,4</sup> </span>
+            </div>
+
+            <!-- Affiliations -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup><a href="https://insait.ai/" target="_blank">INSAIT</a>,
+              </span>
+              <span class="author-block">
+                <sup>2</sup><a href="https://www.tsinghua.edu.cn/en/" target="_blank">Tsinghua University</a>,
+              </span>
+              <span class="author-block">
+                <sup>3</sup><a href="https://en.huji.ac.il/" target="_blank">Hebrew University of Jerusalem</a>,
+              </span>
+              <br>
+              <span class="author-block">
+                <sup>4</sup><a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/index.en.jsp" target="_blank">UKP Lab</a>, 
+                <a href="https://www.tu-darmstadt.de/" target="_blank">TU Darmstadt</a>
+              </span>
+              <span class="eql-cntrb">
+                <small><br><sup>*</sup>Corresponding author: 
+                  <a href="mailto:federico.marcuzzi@insait.ai">federico.marcuzzi@insait.ai</a>
+                </small>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="ai ai-arxiv"></i></span>
+                      <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Image-->
+<section class="hero teaser is-light-orange">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <img src="static/images/example.svg" alt="An overview of our method"/>
+            <h2 class="subtitle has-text-centered">
+              We evaluate the impact of quantization on different dimensions of social bias (i.e., stereotypes, fairness, toxicity, and sentiment).
+              We pay particular attention to demographic category-level bias (i.e., gender, race, and religion) and demographic subgroups (e.g., male, female, non-binary).
+              We then further analyze the impact of quantization by testing both weight-only and activation-weight quantization across different model architectures and reasoning abilities.
+            </h2>
+        </div>
+    </div>
+</section>
+<!-- End teaser Image -->
+
+<section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">Is quantization <span class="orange-text">safe?</span></h2>
+          <div class="has-text-justified">
+            <p>
+              </p><ul>
+                <li><div class="caption">Quantization increases stereotypes and discrimination, reduces the model's tendency to generate toxic content, and neutralizes sentiment.</div></li>
+                <li><div class="caption">Quantization does not introduce new discrimination across demographic categories and subgroups.
+                <li><div class="caption">Quantization has a similar effect across model architectures and reasoning capabilities.</div></li>
+              </ul>
+            <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+ <!--
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents a comprehensive evaluation of how quantization affects model bias, with particular attention to its impact on individual demographic subgroups.
+We focus on weight and activation quantization strategies and examine their effects across a broad range of bias types, including stereotypes, toxicity, sentiment, and fairness.
+We employ both probabilistic and generated text-based metrics across nine benchmarks and evaluate models varying in architecture family and reasoning ability.
+Our findings show that quantization has a nuanced impact on bias: while it can reduce model toxicity and does not significantly impact sentiment, it tends to slightly increase stereotypes and unfairness in generative tasks, especially under aggressive compression.
+These trends are generally consistent across demographic categories and model types, although their magnitude depends on the specific setting.
+Overall, our results highlight the importance of carefully balancing efficiency and ethical considerations when applying quantization in practice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+<!--Motivation -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) have been widely adopted in tasks such as machine translation, question answering, and dialogue systems. Their growing use is driven by the observation that scaling up parameters and data consistently improves performance and unlocks new capabilities. However, this comes with significant computational and memory costs, resulting in higher hardware requirements, increased storage needs, and longer inference times. To address these issues, compression strategies such as quantization have been proposed to reduce resource usage while largely preserving accuracy.
+            <br>
+            <br>
+            While several works have explored the impact of quantization on model capabilities, its effects on other critical aspects, such as social biases, have received little attention.
+            In particular, a fine-grained analysis of the impact of quantization at the demographic category and subgroup level remains largely overlooked.
+            To fill this gap, in this work, we provide an extensive analysis of how quantization affects social bias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Motivation -->
+
+<!-- Evaluation Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation Method</h2>
+        <div class="content has-text-justified">
+          <div class="columns">
+          <div class="column" style="text-align: center;">
+          <img src="static/images/bench_tab.svg" alt="Figure a" style="width: 95%; height: auto;">
+          </div>
+          </div>
+          <p>
+          <span class="orange-text">Quantization:</span> We employ two types of quantization strategies. First, weight-only quantization: Generalized Post-Training Quantization (GPTQ) and Activation-aware Weight Quantization (AWQ). Second, weight-activation quantization: SmoothQuant (SQ).
+          For each strategy, we evaluate different quantization settings by varying the number of quantization bits (e.g., 3-, 4-, and 8-bit quantization for the weights, and 8-bit for the activations).
+          <br>
+          <br>
+          <span class="orange-text">Models:</span> To generalize our understanding of the impact of quantization, we use four models: LLaMa-3.1-8B-Instruct, Qwen2.5-14B-Instruct, DeepSeek-R1-Distill-LLaMa-8B, and DeepSeek-R1-Distill-Qwen-14B.
+          This setup enables us to compare the effects of quantization across different architectures (LLaMa vs. Qwen) and across reasoning capabilities (DeepSeek-based vs. non-DeepSeek models).
+          <br>
+          <br>
+          <span class="orange-text">Social Bias:</span> To expose models' social biases, we employ eight benchmarks covering different social dimensions: stereotypes (StereoSet, RedditBias, and WinoBias), fairness (DiscrimEval, DiscrimEvalGen, and DecodingTrust-Fairness), toxicity (BOLD and DecodingTrust-Toxicity), and sentiment (BOLD).
+          We analyze model bias using both probability-based metrics (first-token probability and sentence perplexity) and generated text-based metrics (choice generation and sentence completion). Finally, we employed the MMLU benchmark to assess the impact of quantization on model capabilities.
+          <br>
+          <br>
+          <span class="orange-text">Demographic Categories and Subgroups:</span> To avoid aggregated results masking nuanced effects of quantization on bias (e.g., decreasing bias for one subgroup while increasing it for another), we perform a fine-grained analysis at both the category and subgroup levels.
+          In particular, we focus on the categories of Gender, Race, and Religion, along with their respective subgroups (e.g., male, female, and non-binary for the gender category).
+          This approach allows us to obtain a three-level understanding of the effects of quantization: global, category-level, and subgroup-level bias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Evaluation Method -->
+
+<!--Findings -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Findings</h2>
+        <div class="content has-text-justified">
+          <p>
+            <span class="orange-text">RQ1: How do quantization and specific quantization strategies impact each bias type?</span>
+            In generative-based tasks, quantization substantially reduces the model's tendency to produce toxic outputs and slightly neutralizes its sentiment.
+            However, it also tends to marginally increase alignment with stereotypes and exacerbate unfair discriminatory behavior, particularly under aggressive compression.
+            <br>
+            <br>
+            In contrast, in probability-based tasks, we do not observe evidence of increased discrimination.
+            Instead, quantization primarily increases model uncertainty: as quantization becomes more aggressive, the model assigns lower likelihoods to both stereotypical and anti-stereotypical prompts.
+            <br>
+            <br>
+            At the quantization-strategies level, we observe that weight-activation quantization (i.e., SQ) has a stronger impact across all dimensions, while for weight-only quantization, AWQ and GPTQ have comparable effects across all experiments.
+            <div class="columns">
+            <div class="column">
+            <img src="static/images/bold_tox.svg" alt="Figure a" style="width: 100%; height: auto;">
+            <div class="fig-caption">Toxicity on BOLD.</div>
+            </div>
+            <div class="column">
+            <img src="static/images/dtf_fair.svg" alt="Figure b" style="width: 97.1%; height: auto;">
+            <div class="fig-caption">Equalized Odds Difference on DT-Fairness.</div>
+            </div>
+            </div>
+
+          <span class="orange-text">RQ2: How does quantization affect bias across categories and subgroups?</span>
+          Overall, quantization has a comparable impact across demographic categories and subgroups: it neither introduces nor substantially alters the discrimination already present in the original models.
+          However, in generative-based tasks, we observe a small increase in stereotype alignment and, in some cases, a heightened tendency to favor specific subgroups over others, which can result in greater unfairness and discriminatory outcomes.
+          <div class="columns">
+          <div class="column">
+          <img src="static/images/bold_toxic_group_base.svg" alt="Figure a" style="width: 100%; height: auto;">
+          <div class="fig-caption">Toxicity across categories on BOLD.</div>
+          </div>
+          <div class="column">
+          <img src="static/images/ss_group_ss_qwen.svg" alt="Figure b" style="width: 99.5%; height: auto;">
+          <div class="fig-caption">Stereotype Score across categories on StereoSet.</div>
+          </div>
+          </div>
+          <span class="orange-text">RQ3: How does quantization affect bias across different model architectures and reasoning abilities?</span>
+          The impact of quantization remains largely consistent across different model architectures and reasoning abilities.
+          Interestingly, un-quantized reasoning models are generally less aligned with stereotypes, produce less toxic outputs, and exhibit greater fairness compared to their non-reasoning counterparts.
+          These distinctions are largely preserved even after quantization, indicating that the relative behavioral differences between reasoning and non-reasoning models are robust to the effects of quantization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Findings -->
+
+<!--BibTex citation -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop content">
+      <h2><a href="#citation" class="header-link">Citation</a></h2>
+<pre id="BibTeX">@article{,
+}</pre>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <button class="button is-small" onclick="copyBibtex()">📋 Copy to clipboard</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--End BibTex citation -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and on the basis of <a href="https://constrained-diffusion.ai/" target="_blank">constrained-diffusion.ai</a>. 
+        <!-- <a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Freepik - Flaticon</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
