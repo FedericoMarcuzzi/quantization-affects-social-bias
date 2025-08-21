@@ -1,34 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 :root {
-  --orange-color: #EC963B;
-  --orange-color-light: #ec963b81;
-  --authors_aff: #FFD701;
-  --color-starter: #EC963B;
-}
-
-:root {
-  --orange-color: #3498DB;
-  --orange-color-light: #3498DB80;
-  --authors_aff: #1ABC9C;
-  --color-starter: #3498DB;
-}
-
-:root {
-  --orange-color: #2ECC71;
-  --orange-color-light: #2ECC7180;
-  --authors_aff: #A3E635;
-  --color-starter: #2ECC71;
-}
-
-:root {
-  --orange-color: #9B59B6;
-  --orange-color-light: #9B59B680;
-  --authors_aff: #F78DA7;
-  --color-starter: #9B59B6;
-}
-
-:root {
   --orange-color: #FF7F50;
   --orange-color-light: #FFB39980;
   --authors_aff: #FFD700;
