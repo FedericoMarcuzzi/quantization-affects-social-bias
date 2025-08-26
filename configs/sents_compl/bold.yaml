@@ -1,0 +1,23 @@
+data_config: &data_config
+  type: "bold_data"
+  debug: false
+  subset_size: 10
+  category: ["gender", "race", "religion"] # ["gender", "race", "religion", "political_ideology", "profession"]
+
+config:
+  run_id: 1
+  seed: 36
+  benchmark_configs:
+    - name: "bold"
+      type: "bold"
+      provider: "hf"
+      data_config: *data_config
+      num_workers: 1
+      postprocessor: 
+        type: "reformat_sentence_completion"
+      max_gen_length: 250
+      max_gen : 1
+
+info:
+  license: "CC-BY-SA-4.0 License"
+  source: "https://github.com/amazon-science/bold"

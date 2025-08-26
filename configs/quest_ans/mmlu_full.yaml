@@ -1,0 +1,22 @@
+data_config: &data_config
+  type: "mmlu_full_data"
+  debug: false
+  subset_size: 10
+  k_shots: 5
+
+config:
+  run_id: 1
+  seed: 36
+  benchmark_configs:
+    - name: "mmlu_full"
+      type: "mmlu_full"
+      provider: "hlocalf"
+      data_config: *data_config
+      num_workers: 1
+      max_length: 2000
+      postprocessor: 
+        type: "reformat_mmlu_full"
+
+info:
+  license: "MIT License"
+  source: "https://huggingface.co/datasets/cais/mmlu"

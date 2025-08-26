@@ -1,0 +1,13 @@
+name: "default"
+type: "causal_lm"
+provider: "vllm"
+device: "auto"
+batch_size: 512
+max_gen_toks: 2000
+quantized: null
+padding_side: "right"
+trust_remote_code: true
+generation_args: {
+    "temperature": 0.0,
+    "top_p": 1.0
+}

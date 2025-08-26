@@ -1,0 +1,22 @@
+data_config: &data_config
+  type: "discrim_eval_gen_data"
+  debug: false
+  subset_size: 10
+  category: ["gender", "race"]
+
+config:
+  run_id: 1
+  seed: 36
+  benchmark_configs:
+    - name: "discrim_eval_gen"
+      type: "discrim_eval_gen"
+      provider: "local"
+      data_config: *data_config
+      num_workers: 1
+      max_length: 2000
+      postprocessor: 
+        type: "reformat_discrim_eval_gen"
+
+info:
+  license: "Unknown"
+  source: "https://github.com/aisoc-lab/inference-acceleration-bias"

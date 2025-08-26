@@ -1,0 +1,26 @@
+name: "dummy_model"
+type: "causal_lm"
+answers: null
+provider: "dummy"
+quantized: null
+tokenizer_name: "dummy_model"
+dtype: "float16"
+device_map: "auto"
+device: "auto"
+batch_size: 10
+max_batch_size: 512
+max_gen_toks: 256
+max_length: null
+add_special_tokens: false
+padding_side: "left"
+generation_args: {
+    "skip_special_tokens": true,
+    "temperature": 1.0,
+    "top_p": 1.0
+}
+url: null
+endpoints: null
+trust_remote_code: true
+revision: main
+subfolder: null
+add_generation_prompt: true

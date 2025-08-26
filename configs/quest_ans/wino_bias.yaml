@@ -1,0 +1,21 @@
+data_config: &data_config
+  type: "wino_bias_data"
+  debug: false
+  subset_size: 10
+
+config:
+  run_id: 1
+  seed: 36
+  benchmark_configs:
+    - name: "wino_bias"
+      type: "wino_bias"
+      provider: "local"
+      data_config: *data_config
+      num_workers: 1
+      max_length: 2000
+      postprocessor: 
+        type: "reformat_coreference_resolution"
+
+info:
+  license: "MIT License"
+  source: "https://github.com/uclanlp/corefBias"

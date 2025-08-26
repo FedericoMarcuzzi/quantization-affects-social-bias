@@ -1,0 +1,7 @@
+[submodule "external/vaderSentiment"]
+	path = external/vaderSentiment
+	url = https://github.com/cjhutto/vaderSentiment
+
+[submodule "compression/llmc_tool/llmc"]
+	path = compression/llmc_tool/llmc
+	url = https://github.com/ModelTC/llmc.git
