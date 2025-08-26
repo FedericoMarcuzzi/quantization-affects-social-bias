@@ -7,9 +7,6 @@
    width="432"
    height="280"
    viewBox="0 0 432 280"
-   sodipodi:docname="bold_toxic_group_base.pdf"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -2127,28 +2124,8 @@
          id="path427" />
     </clipPath>
   </defs>
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1">
-    <inkscape:page
-       x="0"
-       y="0"
-       id="page1"
-       width="432"
-       height="280"
-       margin="0"
-       bleed="0" />
-  </sodipodi:namedview>
   <g
-     id="g1"
-     inkscape:groupmode="layer"
-     inkscape:label="">
+     id="g1">
     <path
        id="path1"
        d="M 0,0 H 324 V 210 H 0 Z"
