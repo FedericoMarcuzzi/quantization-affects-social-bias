@@ -91,11 +91,11 @@ def app_mad(df_data, group, counts):
 
 def mad(dict_groups):
     arr = np.array(list(dict_groups.values()), dtype=float)
-    min_, max_ = arr.min(), arr.max()
-    if min_ == max_:
+    total = arr.sum()
+    if total == 0:
         return 0.0
-    norm = (arr - min_) / (max_ - min_)
-    return np.mean(np.abs(norm - norm.mean()))
+    probs = arr / total
+    return np.mean(np.abs(probs - probs.mean()))
 
 def reformat_discrim_eval(eval_results: dict, legacy: bool = False) -> dict:
     data = _get_data(eval_results, legacy)
