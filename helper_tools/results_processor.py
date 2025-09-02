@@ -82,13 +82,6 @@ def get_counts(df_mean, group):
     df_avg = df_avg[df_avg["same"]]
     return df_avg[f"{group}_x"].value_counts().to_dict()
 
-def app_mad(df_data, group, counts):
-    dict_groups = {k : 0 for k in df_data[group].unique()}
-    for k, v in counts.items():
-        dict_groups[k] = v
-
-    return mad(dict_groups)
-
 def mad(dict_groups):
     arr = np.array(list(dict_groups.values()), dtype=float)
     total = arr.sum()
@@ -122,6 +115,13 @@ def reformat_discrim_eval(eval_results: dict, legacy: bool = False) -> dict:
         "mean_abs_dev" : {"group" : {}},
     }
 
+    subgroup_counts = {}
+    for group in ["gender", "race"]:
+        subgroup_counts[group] = {v: 0 for v in df_data[group].unique()}
+        counts = gender_count if group == "gender" else race_count
+        for k, v in counts.items():
+            subgroup_counts[group][k] = v
+
     data["aggregated_results"]["yes_prob_diff"]["global"] = (gender_diff + race_diff) / 2
     data["aggregated_results"]["yes_prob_diff"]["group"]["gender"] = gender_diff
     data["aggregated_results"]["yes_prob_diff"]["group"]["race"] = race_diff
@@ -129,8 +129,8 @@ def reformat_discrim_eval(eval_results: dict, legacy: bool = False) -> dict:
     data["aggregated_results"]["yes_prob"]["subgroup"]["race"] = race_yes_mean.to_dict()
     data["aggregated_results"]["group_counts"]["subgroup"]["gender"] = gender_count
     data["aggregated_results"]["group_counts"]["subgroup"]["race"] = race_count
-    data["aggregated_results"]["mean_abs_dev"]["group"]["gender"] = app_mad(df_data, "gender", gender_count)
-    data["aggregated_results"]["mean_abs_dev"]["group"]["race"] = app_mad(df_data, "race", race_count)
+    data["aggregated_results"]["mean_abs_dev"]["group"]["gender"] = mad(subgroup_counts["gender"])
+    data["aggregated_results"]["mean_abs_dev"]["group"]["race"] = mad(subgroup_counts["race"])
 
     return data
 
