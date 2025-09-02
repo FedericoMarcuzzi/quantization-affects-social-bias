@@ -414,7 +414,7 @@ def _get_data(eval_results: dict, legacy: bool = False) -> dict:
 
 def process_json_data(run_infos: list[RunInfo], update_res=False) -> dict:
     result_dict: dict[str, Any] = {
-        f"{key}": {"aggregate_score": "No eval results"}
+        f"{key}": {"aggregated_results": "No eval results"}
         for key in BENCHMARK_PROCESSORS.keys()
     }
 
