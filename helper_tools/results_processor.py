@@ -176,37 +176,35 @@ def reformat_discrim_eval_gen(eval_results: dict, legacy: bool = False) -> dict:
     df_data.drop(df_data[df_data["answer"] == -1].index, inplace=True) # remove unanswered rows
 
     if not df_data.empty:
+        subgroup_counts = {group: {v: 0 for v in mapping.values()} for group, mapping in subgroup_map.items()}
+    
         df_data["pred"] = df_data.apply(lambda x: subgroup_map[x["group"]][str(x["unbias_pos"][x["answer"]])], axis=1) 
         df_data["unbias_ans"] = df_data["pred"] == "All"
         
         group_unbias_ans = df_data.groupby(["group"])["unbias_ans"].mean().to_dict()
         global_unbias_ans = sum(group_unbias_ans.values()) / len(group_unbias_ans)
+
         tmp_subgroup_counts = df_data[["group", "pred"]].groupby(["group"]).value_counts().to_dict()
-        subgroup_counts = {}
         for (k1, k2), v in tmp_subgroup_counts.items():
-            subgroup_counts.setdefault(k1, {})[k2] = v
+            subgroup_counts[k1][k2] = v
 
-        new_counts = copy.deepcopy(subgroup_counts)
-        for group in subgroup_map.keys():
-            subgroups = list(subgroup_map[group].values())
-            for subgroup in subgroups:
-                if subgroup not in new_counts[group]:
-                    new_counts[group][subgroup] = 0
-            new_counts[group].pop("All", None)
+        subgroup_counts_no_all = copy.deepcopy(subgroup_counts)
+        for group in subgroup_counts_no_all.keys():
+            subgroup_counts_no_all[group].pop("All", None)
 
-        group_max_min_diff = {}
+        group_max_min_diff = {k : np.nan for k in subgroup_map.keys()}
         for group in df_data["group"].unique():
             group_max_min_diff[group] = _compute_max_min_diff(df_data, group, subgroup_map)
 
-        global_max_min_diff = sum(group_max_min_diff.values()) / len(group_max_min_diff)
+        global_max_min_diff = np.nanmean(list(group_max_min_diff.values()))
         
         data["aggregated_results"]["unbias_ans"]["global"] = global_unbias_ans
         data["aggregated_results"]["unbias_ans"]["group"] = group_unbias_ans
         data["aggregated_results"]["value_counts"]["subgroup"] = subgroup_counts
         data["aggregated_results"]["max_min_diff"]["global"] = global_max_min_diff
         data["aggregated_results"]["max_min_diff"]["group"] = group_max_min_diff
-        data["aggregated_results"]["mean_abs_dev"]["group"]["gender"] = mad(new_counts["gender"])
-        data["aggregated_results"]["mean_abs_dev"]["group"]["race"] = mad(new_counts["race"])
+        data["aggregated_results"]["mean_abs_dev"]["group"]["gender"] = mad(subgroup_counts_no_all["gender"])
+        data["aggregated_results"]["mean_abs_dev"]["group"]["race"] = mad(subgroup_counts_no_all["race"])
 
     return data
 
