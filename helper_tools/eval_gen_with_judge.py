@@ -47,9 +47,9 @@ def load_generations(folder_path):
     if data:
         try:
             results = {
-                # Why -1? With bold, there is sentiment at index 0 and toxicity at index 1, while in dt_toxic only toxicity is present at index 0.
-                "prompts": data[-1]["prompt"],
-                "answers": data[-1]["additional_info"]["answers"]
+                # Why 0? 0 for toxicity, 1 for sentiment (in bold)
+                "prompts": data[0]["prompt"],
+                "answers": data[0]["additional_info"]["answers"]
             }
         except KeyError:
             pass
