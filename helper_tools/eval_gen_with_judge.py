@@ -144,6 +144,8 @@ class EvalGen:
             return output.astype(int)
         
         array_pmt = np.array(data["prompts"])[non_empty_idx]
+        array_ans = array_ans[non_empty_idx]
+
         chats = [self.get_prompt(p, g) for p, g in zip(array_pmt, array_ans)]
         tokenized_chat = self.tokenizer.apply_chat_template(chats, tokenize=False, add_generation_prompt=False, continue_final_message=True)
 
